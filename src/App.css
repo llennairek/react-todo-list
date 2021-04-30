@@ -3,12 +3,17 @@
   visibility: hidden;
 }
 
+.app {
+  background-color: var(--background);
+}
+
 /* HEADER */
 header {
   display: flex;
   align-items: center;
+  justify-content: space-between;
   padding: 25px;
-  border-bottom: 1px solid #877ad1;
+  border-bottom: 1px solid var(--header-border);
 }
 
 header svg[data-icon="list-alt"] {
@@ -17,12 +22,38 @@ header svg[data-icon="list-alt"] {
 }
 
 svg path {
-  fill: #5c48d3;
+  fill: var(--main-color);
 }
 
 h1 {
   font-size: 48px;
   font-weight: 500;
+  color: var(--text);
+}
+
+.theme {
+  position: relative;
+  width: 40px;
+  height: 10px;
+  background-color: var(--background-tasklist-input);
+  border-radius: 10px;
+}
+
+.theme::after {
+  content: " ";
+  display: block;
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: var(--main-color);
+  border-radius: 50%;
+  top: -50%;
+  left: 0;
+}
+
+.isActive.theme::after {
+  left: auto;
+  right: 0;
 }
 
 /* MAIN */
@@ -40,7 +71,7 @@ main {
 }
 
 .task-list {
-  background-color: #efedfd;
+  background-color: var(--background-tasklist-input);
   padding: 25px;
   margin-bottom: 50px;
   border-radius: 5px;
@@ -77,8 +108,8 @@ input[type="checkbox"] {
   padding: 5px 15px;
   border-radius: 5px;
   margin-right: 35px;
-  border: 1px solid #5c48d3;
-  background-color: #efedfd;
+  border: 1px solid var(--main-color);
+  background-color: var(--background-tasklist-input);
   font-size: 18px;
 }
 
@@ -86,21 +117,22 @@ input[type="checkbox"] {
   border: none;
   padding: 5px 15px;
   border-radius: 5px;
-  background-color: #5c48d3;
-  color: white;
+  background-color: var(--main-color);
+  color: var(--second-text);
   font-size: 18px;
 }
 
 /* FOOTER */
 
 footer {
+  color: var(--text);
   text-align: center;
   margin-top: 150px;
 }
 
 footer a {
   text-decoration: none;
-  color: #5c48d3;
+  color: var(--main-color);
   font-weight: 700;
 }
 

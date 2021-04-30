@@ -1,4 +1,22 @@
 /* Reset rules */
+.theme-light {
+  --text: #000;
+  --background: #fff;
+  --main-color: #5c48d3;
+  --second-text: #fff;
+  --header-border: #877ad1;
+  --background-tasklist-input: #efedfd;
+}
+
+.theme-dark {
+  --text: #fff;
+  --background: #000;
+  --main-color: #5c48d3;
+  --second-color: #000;
+  --header-border: #877ad1;
+  --background-tasklist-input: #efedfd;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -9,4 +27,5 @@ body {
   font-size: 16px;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
     Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  background-color: var(--background);
 }
