@@ -101,10 +101,12 @@ main {
 
 input[type="checkbox"] {
   margin-right: 25px;
+  cursor: pointer;
 }
 
 .task svg {
   margin-left: 25px;
+  cursor: pointer;
 }
 
 .strike-through {
