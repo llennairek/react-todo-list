@@ -13,10 +13,13 @@ function Header({ theme, setTheme }) {
     <header>
       <FontAwesomeIcon icon="list-alt" />
       <h1>Todo List</h1>
-      <div
-        className={theme === "theme-light" ? "theme" : "theme isActive"}
-        onClick={handleClick}
-      ></div>
+      <div className="theme-switch">
+        <span>Dark Mode</span>
+        <div
+          className={theme === "theme-light" ? "theme" : "theme isActive"}
+          onClick={handleClick}
+        ></div>
+      </div>
     </header>
   );
 }

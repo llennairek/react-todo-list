@@ -1,15 +1,6 @@
-import React, { useState } from "react";
-
 function FilterTask({ filterValue, setFilterValue, taskList }) {
   const handleChange = (event) => {
     setFilterValue(event.target.value);
-  };
-
-  const handleClick = () => {
-    const newTab = [...taskList].filter((item) => {
-      return item.text.includes(filterValue);
-    });
-    // setFilterTask(newTab);
   };
 
   return (
