@@ -48,6 +48,7 @@ h1 {
   background-color: var(--background-tasklist-input);
   border-radius: 10px;
   margin-top: 10px;
+  cursor: pointer;
 }
 
 .theme::after {
@@ -131,6 +132,7 @@ input[type="checkbox"] {
   background-color: var(--main-color);
   color: var(--second-text);
   font-size: 18px;
+  cursor: pointer;
 }
 
 /* FOOTER */
