@@ -43,28 +43,23 @@ function TodoList() {
           filterTaskList(taskList).length > 0 ? "task-list" : "task-list hidden"
         }
       >
-        {filterTaskList(taskList)
-          // .sort((item, nextItem) => {
-          //   if (item.checked) {
-          //     return 1;
-          //   } else return -1;
-          // })
-          .map((item, index) => (
-            <Task
-              key={index}
-              text={item.text}
-              checked={item.checked}
-              index={index}
-              taskList={taskList}
-              setTaskList={setTaskList}
-            />
-          ))}
+        {filterTaskList(taskList).map((item, index) => (
+          <Task
+            key={index}
+            text={item.text}
+            checked={item.checked}
+            index={index}
+            taskList={taskList}
+            setTaskList={setTaskList}
+          />
+        ))}
       </div>
       <div className="add-task">
         <input
           type="text"
           name="new-task"
           id="new-task"
+          placeholder="Add your task there"
           value={inputValue}
           onChange={(event) => {
             setInputValue(event.target.value);
