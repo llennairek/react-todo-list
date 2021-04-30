@@ -31,7 +31,12 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 100px;
+  margin-top: 50px;
+}
+
+.filter input {
+  width: 100%;
+  margin-bottom: 50px;
 }
 
 .task-list {
@@ -67,7 +72,8 @@ input[type="checkbox"] {
   display: flex;
 }
 
-.add-task input {
+.add-task input,
+.filter input {
   padding: 5px 15px;
   border-radius: 5px;
   margin-right: 35px;
