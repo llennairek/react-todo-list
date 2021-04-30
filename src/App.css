@@ -1,1 +1,103 @@
 /* Other rules */
+.hidden {
+  visibility: hidden;
+}
+
+/* HEADER */
+header {
+  display: flex;
+  align-items: center;
+  padding: 25px;
+  border-bottom: 1px solid #877ad1;
+}
+
+header svg[data-icon="list-alt"] {
+  font-size: 50px;
+  margin-right: 50px;
+}
+
+svg path {
+  fill: #5c48d3;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 500;
+}
+
+/* MAIN */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+}
+
+.task-list {
+  background-color: #efedfd;
+  padding: 25px;
+  margin-bottom: 50px;
+  border-radius: 5px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.task:not(:last-child) {
+  margin-bottom: 10px;
+}
+
+input[type="checkbox"] {
+  margin-right: 25px;
+}
+
+.task svg {
+  margin-left: 25px;
+}
+
+.strike-through {
+  text-decoration: line-through;
+}
+
+.add-task {
+  display: flex;
+}
+
+.add-task input {
+  padding: 5px 15px;
+  border-radius: 5px;
+  margin-right: 35px;
+  border: 1px solid #5c48d3;
+  background-color: #efedfd;
+  font-size: 18px;
+}
+
+.add-task button {
+  border: none;
+  padding: 5px 15px;
+  border-radius: 5px;
+  background-color: #5c48d3;
+  color: white;
+  font-size: 18px;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  margin-top: 150px;
+}
+
+footer a {
+  text-decoration: none;
+  color: #5c48d3;
+  font-weight: 700;
+}
+
+footer a:hover {
+  text-decoration: underline;
+}
