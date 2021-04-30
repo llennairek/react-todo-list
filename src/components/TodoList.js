@@ -59,7 +59,7 @@ function TodoList() {
           type="text"
           name="new-task"
           id="new-task"
-          placeholder="Add your task there"
+          placeholder="Type your task there"
           value={inputValue}
           onChange={(event) => {
             setInputValue(event.target.value);
